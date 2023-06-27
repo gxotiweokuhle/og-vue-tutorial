@@ -120,7 +120,7 @@
             <label for="Employed">Employed</label><br>
             <input type="radio" id="unemployed" v-model="checked" value="Unemployed">
             <label for="Unemployed">Unemployed</label><br>
-            <span>Checked:
+            <span id="btm">Checked:
             <pre>{{ checked }}</pre>
             </span>
 
@@ -149,6 +149,12 @@
 </script>
 
 <style>
+   *{
+    box-sizing: border-box;
+   }
+   body{
+    overflow-x: hidden;
+   }
 
     form{
         background-color: pink;
@@ -157,6 +163,7 @@
     span{
         color: blueviolet;
     }
+    
     
     
 </style>
